@@ -102,6 +102,13 @@ q {
 	-ms-hyphens:     none;
 	hyphens:         none;
 }
+blockquote .pullquote {
+    text-align: center;
+    border:none;
+    font-style:normal;
+    font-size:1.5em;
+    color:blue;
+}
 a:focus {
 	outline: thin dotted;
 }
@@ -211,6 +218,15 @@ blockquote cite {
 
 blockquote cite:before {
 	content: "\2014 \0020";
+}
+blockquote .pullquote {
+	border: none;
+	color: rgb(65,120,250);
+	font-family: "Aleo", "Skolar", "ff-tisa-web-pro", "Georgia", serif;
+	font-style: normal;
+	padding: 5px;
+	text-align: center;
+	font-size: 28px;
 }
 address {
 	margin: 0 0 1.5em;
@@ -923,7 +939,12 @@ object {
 ----------------------------------------------- */
 
 .comment-list {
-	margin: 0;
+	margin: 1.5em 0;
+}
+
+.comment-body {
+	padding: .33em .5em;
+	background-color: rgba(235,235,235,0.8);
 }
 
 .comment-list .comment {
@@ -940,16 +961,23 @@ object {
 	padding: 1.5em 0;
 }
 
+.comment-content {
+	font-style: normal;
+}
+
 .comment-content a {
 	word-wrap: break-word;
 }
 
 .comment-meta {
-	margin-bottom: 0.5em;
+	height:auto;
+	overflow:hidden;
 }
 
 .comment-author .avatar {
-	float: right;
+	float: left;
+	margin:0 0.75em 0.5em 0;
+	border-radius:50%;
 }
 
 .comment-author .fn {
@@ -978,9 +1006,9 @@ object {
 }
 
 .comment .reply {
-	position: absolute;
-	right: 0;
-	top: 5.5em;
+	position: relative;
+	top: 0;
+	font-style:normal;
 }
 
 .comment .comment-respond {
