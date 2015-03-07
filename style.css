@@ -220,15 +220,6 @@ blockquote cite {
 blockquote cite:before {
 	content: "\2014 \0020";
 }
-blockquote .pullquote {
-	border: none;
-	color: rgb(65,120,250);
-	font-family: "Aleo", "Skolar", "ff-tisa-web-pro", "Georgia", serif;
-	font-style: normal;
-	padding: 5px;
-	text-align: center;
-	font-size: 28px;
-}
 address {
 	margin: 0 0 1.5em;
 }
