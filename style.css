@@ -102,7 +102,8 @@ q {
 	-ms-hyphens:     none;
 	hyphens:         none;
 }
-blockquote .pullquote {
+/* Allows the author to highlight a key point in their wrtiting */
+.pullquote {
     text-align: center;
     border:none;
     font-style:normal;
